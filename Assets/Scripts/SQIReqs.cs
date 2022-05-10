@@ -44,13 +44,10 @@ public class SQIReqs : MonoBehaviour
         {
             t.text += "Name: " + entries[i].Name + "\nContact: " + entries[i].Contact + "\nLocation: " + entries[i].Location + "\n\n";
         }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
 
 

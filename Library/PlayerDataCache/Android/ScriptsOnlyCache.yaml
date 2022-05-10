@@ -1,9 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Achievement
     - BannerAd
     - BuildReqs
+    - GPGSManager
     - Interstitial
+    - Leaderboard
     - MobileAdScript
     - Navigation
     - RevReqs
@@ -126,6 +129,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6048}
     - Class: 114
       Script: {instanceID: 54154}
+    - Class: 114
+      Script: {instanceID: 77342}
+    - Class: 114
+      Script: {instanceID: 92992}
+    - Class: 114
+      Script: {instanceID: 177010}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -767,7 +776,37 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RevReqs
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GooglePlayGames.OurUtils
+    className: PlayGamesHelperObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GooglePlayGames.OurUtils
+    className: NearbyHelperObject
+  - hash:
+      serializedVersion: 2
+      Hash: 3cc24f4bd151a0ce897d910945e7d32d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GPGSManager
+  - hash:
+      serializedVersion: 2
+      Hash: 997f89b6b0b658a143e8dcb10787e892
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Achievement
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Leaderboard
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Stephanie/CampervanConversion/CC2.apk
+  playerPath: C:/Users/Stephanie/CampervanConversion/CampervanConversion.apk

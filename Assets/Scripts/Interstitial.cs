@@ -10,29 +10,29 @@ public class Interstitial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
-    }
-
-    public void RequestInterstitial()
-    {
-
         string adUnitId = "ca-app-pub-3940256099942544/1033173712";
-
-        interstitial = new InterstitialAd(adUnitId);
-        AdRequest request = new AdRequest.Builder().Build();
-        interstitial.LoadAd(request);
+        this.interstitial = new InterstitialAd(adUnitId);
 
         interstitial.OnAdLoaded += HandleOnAdLoaded;
         interstitial.OnAdFailedToLoad += HandleOnAdFailedToLoad;
         interstitial.OnAdOpening += HandleOnAdOpening;
         interstitial.OnAdClosed += HandleOnAdClosed;
 
-        if (interstitial.IsLoaded())
+
+        AdRequest request = new AdRequest.Builder().Build();
+        interstitial.LoadAd(request);
+    }
+
+    public void RequestInterstitial()
+    {
+        if (this.interstitial.IsLoaded())
         {
-            interstitial.Show();
+            this.interstitial.Show();
+            GameObject AdMobInterstitial = GameObject.Find("768x1024(Clone)");
+            GameObject mainC = GameObject.Find("MainCanvas");
+            AdMobInterstitial.transform.SetParent(mainC.transform);
         }
-        else
-            RequestInterstitial();
+
 
     }
 
@@ -55,13 +55,14 @@ public class Interstitial : MonoBehaviour
     public void HandleOnAdClosed(object sender, EventArgs args)
     {
         MonoBehaviour.print("HandleAdClosed event received");
+
+        AdRequest request = new AdRequest.Builder().Build();
+        interstitial.LoadAd(request);
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameObject AdMobInterstitial = GameObject.Find("768x1024(Clone)");
-        GameObject mainC = GameObject.Find("MainCanvas");
-        AdMobInterstitial.transform.SetParent(mainC.transform);
+        
     }
 }

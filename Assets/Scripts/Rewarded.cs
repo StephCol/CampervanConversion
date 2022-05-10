@@ -12,7 +12,7 @@ public class Rewarded : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string adUnitId = "ca-app-pub-3940256099942544/5224354917 ";
+        string adUnitId = "ca-app-pub-3940256099942544/5224354917";
         this.rewardedAd = new RewardedAd(adUnitId);
 
         // Called when an ad request has successfully loaded.
@@ -35,7 +35,7 @@ public class Rewarded : MonoBehaviour
     public void RequestRewarded()
     {
         
-       //if (this.rewardedAd.IsLoaded())
+       if (this.rewardedAd.IsLoaded())
             this.rewardedAd.Show();
 
         AdRequest req = new AdRequest.Builder().Build();
@@ -72,22 +72,10 @@ public class Rewarded : MonoBehaviour
     }
 
     public void HandleUserEarnedReward(object sender, Reward args)
-    {/*
-        string type = args.Type;
-        double amount = args.Amount;
-        MonoBehaviour.print(
-            "HandleRewardedAdRewarded event received for "
-                        + amount.ToString() + " " + type);*/
-
-        Navigation nav = new Navigation();
-        nav.getBuildSupPanelConfirmation();
-    }
-
-    // Update is called once per frame
-    void Update()
     {
-        GameObject AdMobInterstitial = GameObject.Find("768x1024(Clone)");
-        GameObject mainC = GameObject.Find("MainCanvas");
-        AdMobInterstitial.transform.SetParent(mainC.transform);
+
+        Navigation.getRewardedConfirmation();
     }
+
+
 }

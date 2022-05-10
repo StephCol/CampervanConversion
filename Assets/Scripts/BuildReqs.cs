@@ -30,6 +30,23 @@ public class BuildReqs : MonoBehaviour
         Text t = txt.GetComponent<Text>();
         t.text = (count*25) + "% Complete";
 
+        getAchievement(count);
+        postScoreToLeaderBoard(30);
+     }
+
+    private void postScoreToLeaderBoard(int score)
+    {
+        Leaderboard.PostScoreToLeaderboard(score);
+    }
+
+    public void getAchievement(int count)
+    {
+        if (count == 4)
+        {
+            Achievement.GrantAchievementBtn();
+            //Achievement.RevealAchievementBtn();
+            Achievement.RevealIncrementalBtn();
         }
+    }
 
 }

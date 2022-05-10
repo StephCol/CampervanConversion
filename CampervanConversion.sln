@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMobileAds.Editor", "GoogleMobileAds.Editor.csproj", "{8875AA83-03BF-8325-4D22-9715CE86DFB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{4FB3A71C-FD19-23C3-4F99-C15AE660A3AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{8875AA83-03BF-8325-4D22-9715CE86DFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8875AA83-03BF-8325-4D22-9715CE86DFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8875AA83-03BF-8325-4D22-9715CE86DFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB3A71C-FD19-23C3-4F99-C15AE660A3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB3A71C-FD19-23C3-4F99-C15AE660A3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB3A71C-FD19-23C3-4F99-C15AE660A3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB3A71C-FD19-23C3-4F99-C15AE660A3AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

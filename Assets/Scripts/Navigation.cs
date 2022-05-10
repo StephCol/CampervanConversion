@@ -14,20 +14,16 @@ public class Navigation : MonoBehaviour
     void Start()
     {
         buildReq = GameObject.Find("c_buildReqs");
-        buildReq.SetActive(false);
-
         sqiReqs = GameObject.Find("c_sqidir");
-        sqiReqs.SetActive(false);
 
         buildSup = GameObject.Find("c_buildsup");
         buildSup.SetActive(false);
 
-        rewardConfirmation = GameObject.Find("c_PopUp");
-        rewardConfirmation.SetActive(false);
-
         revReqs = GameObject.Find("c_revReqs");
         revReqs.SetActive(false);
 
+        rewardConfirmation = GameObject.Find("c_PopUp");
+        rewardConfirmation.SetActive(false);
     }
 
     public void getBuildPanel()
@@ -70,8 +66,9 @@ public class Navigation : MonoBehaviour
         revReqs.SetActive(false);
     }
 
-    public void getBuildSupPanelConfirmation()
+    public static void getRewardedConfirmation()
     {
+        
         rewardConfirmation.SetActive(true);
     }
 

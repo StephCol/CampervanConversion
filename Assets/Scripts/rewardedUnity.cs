@@ -66,9 +66,7 @@ public class rewardedUnity : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShow
     {
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
-            Navigation nav = new Navigation();
-            nav.getBuildSupPanelConfirmation();
-            nav.getBuildSupPanel();
+            Navigation.getRewardedConfirmation();
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);

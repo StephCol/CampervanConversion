@@ -7,7 +7,7 @@ public class MobileAdScript : MonoBehaviour
 {
 
     private BannerAd banner = new BannerAd();
-    //private Interstitial interstitial = new Interstitial();
+    private Interstitial interstitial = new Interstitial();
     private Rewarded rewarded = new Rewarded();
 
     // Start is called before the first frame update
@@ -15,7 +15,7 @@ public class MobileAdScript : MonoBehaviour
     {
         MobileAds.Initialize(initStatus => { });
         banner.RequestBanner();
-        //interstitial.RequestInterstitial();
+        interstitial.RequestInterstitial();
         rewarded.RequestRewarded();
     }
 
