@@ -54,17 +54,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\bannerUnity.cs" />
+    <Compile Include="Assets\Scripts\BuildReqs.cs" />
     <Compile Include="Assets\Scripts\Rewarded.cs" />
+    <Compile Include="Assets\Scripts\SQIReqs.cs" />
     <Compile Include="Assets\Scripts\BannerAd.cs" />
     <Compile Include="Assets\Scripts\sdk.cs" />
     <Compile Include="Assets\Scripts\Interstitial.cs" />
+    <Compile Include="Assets\Scripts\SupplyReqs.cs" />
     <Compile Include="Assets\Scripts\interstitialUnity.cs" />
     <Compile Include="Assets\Scripts\rewardedUnity.cs" />
     <Compile Include="Assets\Scripts\MobileAdScript.cs" />
     <Compile Include="Assets\Scripts\Navigation.cs" />
-    <Compile Include="Assets\Scripts\BuildReqs.cs" />
-    <Compile Include="Assets\Scripts\SQIReqs.cs" />
-    <Compile Include="Assets\Scripts\SupplyReqs.cs" />
+    <Compile Include="Assets\RevReqs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-7.0.0_manifest.txt" />

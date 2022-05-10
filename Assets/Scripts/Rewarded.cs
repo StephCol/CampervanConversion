@@ -72,12 +72,15 @@ public class Rewarded : MonoBehaviour
     }
 
     public void HandleUserEarnedReward(object sender, Reward args)
-    {
+    {/*
         string type = args.Type;
         double amount = args.Amount;
         MonoBehaviour.print(
             "HandleRewardedAdRewarded event received for "
-                        + amount.ToString() + " " + type);
+                        + amount.ToString() + " " + type);*/
+
+        Navigation nav = new Navigation();
+        nav.getBuildSupPanelConfirmation();
     }
 
     // Update is called once per frame

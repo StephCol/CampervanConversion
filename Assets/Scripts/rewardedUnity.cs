@@ -9,6 +9,8 @@ public class rewardedUnity : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShow
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms
 
+    
+
     void Awake()
     {
         // Get the Ad Unit ID for the current platform:
@@ -64,8 +66,9 @@ public class rewardedUnity : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShow
     {
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
-            Debug.Log("Unity Ads Rewarded Ad Completed");
-            // Grant a reward.
+            Navigation nav = new Navigation();
+            nav.getBuildSupPanelConfirmation();
+            nav.getBuildSupPanel();
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);

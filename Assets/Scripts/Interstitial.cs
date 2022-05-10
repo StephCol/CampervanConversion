@@ -27,12 +27,12 @@ public class Interstitial : MonoBehaviour
         interstitial.OnAdOpening += HandleOnAdOpening;
         interstitial.OnAdClosed += HandleOnAdClosed;
 
-
-
         if (interstitial.IsLoaded())
         {
             interstitial.Show();
         }
+        else
+            RequestInterstitial();
 
     }
 

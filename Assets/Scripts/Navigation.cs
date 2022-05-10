@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,8 @@ public class Navigation : MonoBehaviour
     static GameObject buildReq;
     static GameObject sqiReqs;
     static GameObject buildSup;
+    static GameObject revReqs;
+    static GameObject rewardConfirmation;
 
     void Start()
     {
@@ -18,6 +21,13 @@ public class Navigation : MonoBehaviour
 
         buildSup = GameObject.Find("c_buildsup");
         buildSup.SetActive(false);
+
+        rewardConfirmation = GameObject.Find("c_PopUp");
+        rewardConfirmation.SetActive(false);
+
+        revReqs = GameObject.Find("c_revReqs");
+        revReqs.SetActive(false);
+
     }
 
     public void getBuildPanel()
@@ -48,6 +58,26 @@ public class Navigation : MonoBehaviour
     public void hideBuildSupPanel()
     {
         buildSup.SetActive(false);
+    }
+
+    public void getRevReqPanel()
+    {
+        revReqs.SetActive(true);
+    }
+
+    public void hideRevReqPanel()
+    {
+        revReqs.SetActive(false);
+    }
+
+    public void getBuildSupPanelConfirmation()
+    {
+        rewardConfirmation.SetActive(true);
+    }
+
+    public void hideBuildSupPanelConfirmation()
+    {
+        rewardConfirmation.SetActive(false);
     }
 
 

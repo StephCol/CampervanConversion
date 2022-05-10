@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Interstitial
     - MobileAdScript
     - Navigation
+    - RevReqs
     - Rewarded
     - SQIReqs
     - SupplyReqs
@@ -82,47 +83,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1906}
     - Class: 114
-      Script: {instanceID: 2482}
+      Script: {instanceID: 2066}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 2940}
+      Script: {instanceID: 2818}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 3146}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3390}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3656}
+      Script: {instanceID: 3150}
     - Class: 114
-      Script: {instanceID: 3670}
+      Script: {instanceID: 3394}
     - Class: 114
-      Script: {instanceID: 3796}
+      Script: {instanceID: 3660}
     - Class: 114
-      Script: {instanceID: 3896}
+      Script: {instanceID: 3674}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 3800}
     - Class: 114
-      Script: {instanceID: 4652}
+      Script: {instanceID: 3900}
     - Class: 114
-      Script: {instanceID: 4956}
+      Script: {instanceID: 4336}
     - Class: 114
-      Script: {instanceID: 5178}
+      Script: {instanceID: 4650}
     - Class: 114
-      Script: {instanceID: 5328}
+      Script: {instanceID: 4658}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 4962}
     - Class: 114
-      Script: {instanceID: 5780}
+      Script: {instanceID: 5184}
     - Class: 114
-      Script: {instanceID: 6042}
+      Script: {instanceID: 5334}
     - Class: 114
-      Script: {instanceID: 49970}
+      Script: {instanceID: 5494}
     - Class: 114
-      Script: {instanceID: 97460}
+      Script: {instanceID: 5786}
     - Class: 114
-      Script: {instanceID: 153074}
+      Script: {instanceID: 6048}
+    - Class: 114
+      Script: {instanceID: 54154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -232,6 +235,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BuildReqs
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -290,6 +299,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SQIReqs
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -539,6 +554,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SupplyReqs
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
@@ -745,19 +766,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: BuildReqs
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SQIReqs
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SupplyReqs
+    className: RevReqs
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
