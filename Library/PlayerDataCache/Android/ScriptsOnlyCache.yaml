@@ -809,4 +809,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/Stephanie/CampervanConversion/CampervanConversion.apk
+  playerPath: C:/Users/Stephanie/CampervanConversion/CampevanConversionChecklist.aab

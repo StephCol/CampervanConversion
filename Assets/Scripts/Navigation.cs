@@ -15,6 +15,7 @@ public class Navigation : MonoBehaviour
     {
         buildReq = GameObject.Find("c_buildReqs");
         sqiReqs = GameObject.Find("c_sqidir");
+        sqiReqs.SetActive(false);
 
         buildSup = GameObject.Find("c_buildsup");
         buildSup.SetActive(false);
@@ -36,7 +37,7 @@ public class Navigation : MonoBehaviour
         buildReq.SetActive(false);
     }
 
-    public void getSQIPanel()
+    public static void getSQIPanel()
     {
         sqiReqs.SetActive(true);
     }

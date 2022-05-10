@@ -13,14 +13,13 @@ public class Interstitial : MonoBehaviour
         string adUnitId = "ca-app-pub-3940256099942544/1033173712";
         this.interstitial = new InterstitialAd(adUnitId);
 
+        AdRequest request = new AdRequest.Builder().Build();
+        interstitial.LoadAd(request);
+
         interstitial.OnAdLoaded += HandleOnAdLoaded;
         interstitial.OnAdFailedToLoad += HandleOnAdFailedToLoad;
         interstitial.OnAdOpening += HandleOnAdOpening;
         interstitial.OnAdClosed += HandleOnAdClosed;
-
-
-        AdRequest request = new AdRequest.Builder().Build();
-        interstitial.LoadAd(request);
     }
 
     public void RequestInterstitial()
@@ -32,7 +31,12 @@ public class Interstitial : MonoBehaviour
             GameObject mainC = GameObject.Find("MainCanvas");
             AdMobInterstitial.transform.SetParent(mainC.transform);
         }
-
+        else
+        {
+            AdRequest request = new AdRequest.Builder().Build();
+            interstitial.LoadAd(request);
+            RequestInterstitial();
+        }
 
     }
 
@@ -58,11 +62,12 @@ public class Interstitial : MonoBehaviour
 
         AdRequest request = new AdRequest.Builder().Build();
         interstitial.LoadAd(request);
+        Navigation.getSQIPanel();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
